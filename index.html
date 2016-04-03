@@ -4,13 +4,192 @@
   <meta charset="UTF-8">
   <title>D3 Graphic</title>
   <link rel="stylesheet" href="_/base.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>D3 Graphic</h2>
-    <div id="chart"></div>
+<!-- Main jumbotron -->
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1>Kanye West</h1>
+        <p>An Analysis of Kanye's Samples from <a href="http://www.whosampled.com">whosampled.com</a></p>
+        <small>By: Anna Garcia, Jake Bialer & Chukwuyem Jotham Onyibe</small>
+      </div>
+    </div>
   </div>
+<!-- Charts -->
+  <section class="container">
+    <div class="text-center">
+      <h2>Kanye's Favorite Parts Of Song To Sample</h2>
+      <div id="chart"></div>
+    </div>
+    <div class="text-center">
+      <h2>Kanye's Most Popular Centuries</h2>           
+      <table id="hor-minimalist-a" class="table center-table">
+        <thead>
+          <tr>
+            <th>Century</th>
+            <th>Number Of Samples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1600s</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1700s</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>1900s</td>
+            <td>338</td>
+          </tr>
+          <tr>
+            <td>2000s</td>
+            <td>118</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+    <div class="text-center">
+      <h2>Kanye's Most Popular Decades</h2>
+      <table id="hor-minimalist-a" class="table center-table">
+        <tbody>
+   <tr>
+      <th>Decade</th>
+      <th>Samples</th>
+   </tr>
+   <tr>
+      <td>1970&#39;s</td>
+      <td>150</td>
+   </tr>
+   <tr>
+      <td>1990&#39;s</td>
+      <td>75</td>
+   </tr>
+   <tr>
+      <td>2000&#39;s</td>
+      <td>75</td>
+   </tr>
+   <tr>
+      <td>1980&#39;s</td>
+      <td>66</td>
+   </tr>
+   <tr>
+      <td>2010&#39;s</td>
+      <td>43</td>
+   </tr>
+   <tr>
+      <td>1960&#39;s</td>
+      <td>36</td>
+   </tr>
+   <tr>
+      <td>1950&#39;s</td>
+      <td>5</td>
+   </tr>
+   <tr>
+      <td>1920&#39;s</td>
+      <td>3</td>
+   </tr>
+   <tr>
+      <td>1600&#39;s</td>
+      <td>1</td>
+   </tr>
+   <tr>
+      <td>1770&#39;s</td>
+      <td>1</td>
+   </tr>
+   <tr>
+      <td>1790&#39;s</td>
+      <td>1</td>
+   </tr>
+   <tr>
+      <td>1990&#39;s</td>
+      <td>1</td>
+   </tr>
+   <tr>
+      <td>1930&#39;s</td>
+      <td>1</td>
+   </tr>
+   <tr>
+      <td>1940&#39;s</td>
+      <td>1</td>
+   </tr>
+</tbody>
+      </table>
+
+      
+    </div> 
+    <div class="text-center">
+      <h2>Top Ten Artists Kanye Samples</h2>
+      <table id="hor-minimalist-a" class="table center-table">
+      <tbody>
+   <tr>
+      <th>Artist</th>
+      <th>Samples</th>
+   </tr>
+   <tr>
+      <td>James Brown</td>
+      <td>11</td>
+   </tr>
+   <tr>
+      <td>Jay Z</td>
+      <td>9</td>
+   </tr>
+   <tr>
+      <td>Kanye West</td>
+      <td>8</td>
+   </tr>
+   <tr>
+      <td>Traditional Folk</td>
+      <td>5</td>
+   </tr>
+   <tr>
+      <td>Orchestra Njervudarov</td>
+      <td>4</td>
+   </tr>
+   <tr>
+      <td>Nina Simone</td>
+      <td>4</td>
+   </tr>
+   <tr>
+      <td>Mountain</td>
+      <td>4</td>
+   </tr>
+   <tr>
+      <td>Yoko Shimomura &amp; Isao Abe</td>
+      <td>3</td>
+   </tr>
+   <tr>
+      <td>The Notorious B.I.G.</td>
+      <td>3</td>
+   </tr>
+   <tr>
+      <td>Rick James</td>
+      <td>3</td>
+   </tr>
+</tbody>
+
+      </table>  
+    </div>  
+    <div class="text-center">
+      <h2>Who Kanye Samples</h2>
+      <iframe width="700" height="700" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;viz=GVIZ&amp;t=GRAPH&amp;gc=false&amp;gd=true&amp;sdb=1&amp;rmax=100000&amp;q=select+col0%2C+col1%2C+col2+from+1wF-Oa7DIj4ailz-msTSWoW5lkRN4nNc2i9ITQcA6&amp;qrs=+where+col0+%3E%3D+&amp;qre=+and+col0+%3C%3D+&amp;qe=&amp;uiversion=2&amp;state=%7B%22ps%22%3A%221_0_-37_-1_1_-2u_s_2_-3n_w_3_-43_-o_4_-4a_5_5_-2z_-1a_6_-22_-k_7_-1w_2_8_-20_m_9_-2a_12_a_-47_13_b_-22_-z_c_-1o_-c_d_-3n_-1j_g_-2b_-1g_h_-1j_2_e_-31_1m_f_-44_-1f_i_-4y_-b_j_-20_-1d_k_-a2i_-1o_v_-2p_-1w_w_-3e_1w_l_-3j_-1x_y_-4y_-u_m_-3z_-1s_x_-20_1g_p_-4l_-1d_n_-4o_18_u_-30_-1y_s_-4s_-13_q_-54_9_t_-1c_-i_r_-54_-1_o_-51_l_10_-54_u_12_-4c_1r_11_-5a_-d_z_-4a_-1u_14_-2a_-27_1f_-5i_-h_16_-4n_1t_1h_-43_-27_1g_-5k_-4_1a_-w_b_1c_-3k_-2d_1b_-5b_-12_1i_-56_-1b_15_-33_-2d_1k_-5h_k_1d_-12_-10_17_-32_2b_1e_-3k_2b_18_-4s_-1s_19_-58_15_1j_-40_27_13_-2g_27_1r_-5u_-n_1s_-4z_21_1t_-38_2p_1u_-3r_-2p_1v_-5j_1c_1w_-1p_-2a_1x_-26_-2j_1y_-5o_-15_1z_-10_-1m_20_-34_-2r_21_-2r_2n_22_-h_2_23_-r_-17_24_-1c_-20_1n_-2j_-2n_26_-47_2i_27_-3j_2o_28_-13_1o_29_-49_-2j_2a_-4o_-2b_2b_-i_-a_2c_-5k_-1d_2d_-5w_-d_2e_-57_1t_1l_-2c_2j_2g_-52_-20_1m_-p_11_1o_-j_d_1p_-5x_5_1q_-3g_-2q_2l_-x_1f_2f_-1f_21_25_-5s_r_2h_-4q_27_2i_-1r_2a_2j_-5f_-1l_2k_-l_-r_3j_-6b_16_2s_-2w_3a_2t_-z_-2i_2u_-3o_-3b_2v_4_c_2w_4_-c_2x_-x_2e_2y_-e_-1s_2z_5_-5_30_2_m_31_-2q_-3b_32_-g_1u_33_-6i_e_34_-8_-1j_35_-4y_2s_36_-1r_-30_37_-5q_25_38_-18_2o_39_-4q_2x_3a_-7_1f_3b_-3_14_3c_-41_37_3d_-15_-2n_3e_-52_-2s_3f_-65_1j_3g_-20_-34_3h_5_3_3i_-3s_39_2r_-6h_-i_3k_-5d_2i_3l_-1q_2y_3m_-2_-13_3n_-1e_2s_3o_-22_33_2n_-28_-37_2o_-1d_-2t_2p_-3i_3a_2q_-q_27_2m_-5_-1b_3u_-j_-20_3v_-46_-37_3w_-35_-3c_3x_-2o_39_3y_1_-u_3z_-4f_32_40_3_-k_41_-6e_y_42_-6i_-9_43_-2c_37_44_-38_3b_45_0_v_46_-5k_2c_3q_-5v_-20_47_-k_20_3r_-t_-2c_48_-68_-1c_49_-5x_1w_3s_-s_2_4a_-69_1c_4b_-1k_2v%22%2C%22cx%22%3A-103.65912365889395%2C%22cy%22%3A5.513263015321507%2C%22sw%22%3A662.5565432696809%2C%22sh%22%3A386.1714267261292%2C%22z%22%3A1.2962073920212756%7D&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=700&amp;height=700"></iframe>
+    </div>
+    <div class="text-center">
+      <h2>Genres Kanye Samples</h2>
+      <iframe width="700" height="700" src="index1.html"></iframe>
+    </div>
+    <div id="genre"></div>
+    
+  </section>
+
+
+
+
+<!-- Scipts -->
   <script src="_/d3.min.js"></script>
   <script src="script.js"></script>
 </body>

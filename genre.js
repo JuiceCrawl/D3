@@ -1,14 +1,13 @@
-(function(){
-    var names = ['Vocals / Lyrics', 'Multiple Elements', 'Drums', 'Hook / Riff', 'Dialogue', 'Sound Effect / Other'];
+var names = ['Vocals / Lyrics', 'Multiple Elements', 'Drums', 'Hook / Riff', 'Dialogue', 'Sound Effect / Other'];
 var bardata = [];
-    d3.csv('data1.csv', function(data) {
+    d3.csv('genre.csv', function(data) {
         console.log(data);
 
         for (key in data) {
             bardata.push(data[key].value)
         }
 
-    var margin = { top: 30, right: 30, bottom: 40, left:50 };
+    var margin = { top: 30, right: 30, bottom: 145, left:50 };
 
     console.log(names);
 
@@ -38,7 +37,7 @@ var bardata = [];
             .style('background', 'white')
             .style('opacity', 0)
 
-    var myChart = d3.select('#chart').append('svg')
+    var myChart = d3.select('#genre').append('svg')
         .style('background', '#E7E0CB')
         .attr('width', width + margin.left + margin.right)
         .attr('height', height + margin.top + margin.bottom)
@@ -124,6 +123,7 @@ var bardata = [];
             .style({ stroke: "#000"})
         hGuide.selectAll("text")
            .attr("font-size", "14p")
-           .attr("transform", "rotate(-10)")
+           .attr("transform", "rotate(-90)")
+           .attr("dy",-5)
+           .attr("dx",-75)
 });
-})();
