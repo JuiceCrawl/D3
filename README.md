@@ -20,5 +20,3 @@ This project uses data from <a href="http://www.whosampled.com/">whosampled.com<
     </tr>
   </tbody>
 </table>
-
-<a href="https://github.com/juicecrawl">Anna Garcia</a>, <a href="https://github.com/livejake">Jake Bialer</a> & <a href="https://github.com/chukwuyem">Chukwuyem Onyibe</a> 
