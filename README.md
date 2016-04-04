@@ -3,4 +3,22 @@ A Project Created at NYC'S Hip Hop Hackathon hosted by <a href="http://monthlymu
 
 This project uses data from <a href="http://www.whosampled.com/">whosampled.com</a> and D3.js to display Kanye's sampling habits such as favorite parts of a song he likes to sample, most popular centuries, decades, artists, and genres.
 
-Contributors: <a href="https://github.com/juicecrawl">Anna Garcia</a>, <a href="https://github.com/livejake">Jake Bialer</a> & <a href="https://github.com/chukwuyem">Chukwuyem Onyibe</a> 
+#Contributors: 
+<table>
+  <tbody>
+    <tr align="left">
+      <th>Anna Garcia</th>
+      <th><a href="https://github.com/juicecrawl">GitHub/JuiceCrawl</a></th>
+    </tr>
+    <tr align="left">
+      <th>Jake Bialer</th>
+      <th><a href="https://github.com/livejake">GitHub/LiveJake</a></th>
+    </tr>
+    <tr align="left">
+      <th>Chukwuyem Onyibe</th>
+      <th><a href="https://github.com/chukwuyem">GitHub/Chukwuyem</a></th>
+    </tr>
+  </tbody>
+</table>
+
+<a href="https://github.com/juicecrawl">Anna Garcia</a>, <a href="https://github.com/livejake">Jake Bialer</a> & <a href="https://github.com/chukwuyem">Chukwuyem Onyibe</a> 
